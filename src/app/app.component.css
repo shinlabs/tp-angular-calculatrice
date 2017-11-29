@@ -1,0 +1,30 @@
+.ligne{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+#affichage{
+  border : solid black 1px;
+  margin : auto;
+  width : 140px;
+  text-align:right;
+}
+
+#contenu{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.fond_gris{
+  background-color:rgb(150,150,150);
+  margin:3px;
+  padding:8px;
+  width:15px;
+  height:15px;
+}
+
+div{
+
+}

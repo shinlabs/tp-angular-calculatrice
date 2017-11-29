@@ -2,7 +2,31 @@
 <div style="text-align:center">
   <h1>La calculatrice</h1>
   <div id = "contenu">
-    <input id = "affichage" [(ngModel)]="affichage" />
+    <div id = "affichage">{{affichage}}</div>
+    <div id = "ligne1" class = "ligne">
+      <div id = "7" class = "fond_gris">7</div>
+      <div id = "8" class = "fond_gris">8</div>
+      <div id = "9" class = "fond_gris">9</div>
+      <div id = "+" class = "fond_gris">+</div>
+    </div>
+    <div id = "ligne2" class = "ligne">
+      <div id = "4" class = "fond_gris">4</div>
+      <div id = "5" class = "fond_gris">5</div>
+      <div id = "6" class = "fond_gris">6</div>
+      <div id = "-" class = "fond_gris">-</div>
+    </div>
+    <div id = "ligne3" class = "ligne">
+      <div id = "1" class = "fond_gris">1</div>
+      <div id = "2" class = "fond_gris">2</div>
+      <div id = "3" class = "fond_gris">3</div>
+      <div id = "*" class = "fond_gris">*</div>
+    </div>
+    <div id = "ligne4" class = "ligne">
+      <div id = "0" class = "fond_gris">0</div>
+      <div id = "=" class = "fond_gris">=</div>
+      <div id = "C" class = "fond_gris">C</div>
+      <div id = "/" class = "fond_gris">/</div>
+    </div>
   </div>
 </div>
 
