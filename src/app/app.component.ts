@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   affichage = 0;
+
+  clickOnPad = function(char) {
+
+    if(char == "=") this.affichage = eval(this.affichage);
+    else if(char == "C") this.affichage = 0;
+    else if (this.affichage == 0) this.affichage = char;
+      else this.affichage += char;
+  }
+
 }

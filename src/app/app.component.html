@@ -1,33 +1,35 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>La calculatrice</h1>
-  <div id = "contenu">
-    <div id = "affichage">{{affichage}}</div>
-    <div id = "ligne1" class = "ligne">
-      <div id = "7" class = "fond_gris">7</div>
-      <div id = "8" class = "fond_gris">8</div>
-      <div id = "9" class = "fond_gris">9</div>
-      <div id = "+" class = "fond_gris">+</div>
-    </div>
-    <div id = "ligne2" class = "ligne">
-      <div id = "4" class = "fond_gris">4</div>
-      <div id = "5" class = "fond_gris">5</div>
-      <div id = "6" class = "fond_gris">6</div>
-      <div id = "-" class = "fond_gris">-</div>
-    </div>
-    <div id = "ligne3" class = "ligne">
-      <div id = "1" class = "fond_gris">1</div>
-      <div id = "2" class = "fond_gris">2</div>
-      <div id = "3" class = "fond_gris">3</div>
-      <div id = "*" class = "fond_gris">*</div>
-    </div>
-    <div id = "ligne4" class = "ligne">
-      <div id = "0" class = "fond_gris">0</div>
-      <div id = "=" class = "fond_gris">=</div>
-      <div id = "C" class = "fond_gris">C</div>
-      <div id = "/" class = "fond_gris">/</div>
-    </div>
-  </div>
+  <table id = "contenu">
+    <tbody>
+    <tr><td id = "affichage" colspan="4">{{affichage}}</td></tr>
+    <tr class = "ligne">
+      <td><button class = "fond_gris" (click) = "clickOnPad('7')">7</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('8')">8</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('9')">9</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('+')">+</button></td>
+    </tr>
+    <tr class = "ligne">
+      <td><button class = "fond_gris" (click) = "clickOnPad('4')">4</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('5')">5</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('6')">6</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('-')">-</button></td>
+    </tr>
+    <tr class = "ligne">
+      <td><button class = "fond_gris" (click) = "clickOnPad('1')">1</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('2')">2</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('3')">3</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('*')">*</button></td>
+    </tr>
+    <tr class = "ligne">
+      <td><button class = "fond_gris" (click) = "clickOnPad('0')">0</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('=')">=</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('C')">C</button></td>
+      <td><button class = "fond_gris" (click) = "clickOnPad('/')">/</button></td>
+    </tr>
+    </tbody>
+  </table>
 </div>
 
 
